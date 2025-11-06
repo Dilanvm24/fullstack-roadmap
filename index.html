@@ -5,38 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Vida Personal</title>
+
+    <style>
+        #precio-mt[data-precio="caro"] {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+        }
+
+        #precio-mt[data-precio="barato"] {
+            color: rgb(12, 199, 24);
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <h1>Mi Vida Personal</h1>
+    <h1 style="background-color: lightblue; color: darkgray; text-align: center;">Mi Vida Personal</h1>
 
-    <h2>Información Personal</h2>
-    <p>Hola, mi nombre es <b>Dilan</b>. Tengo 23 años recien cumplidos y vivo en la cuidad de <em>medellin</em> con mis
-        padres y
-        hermanos.</p>
-
+    <div style="align-items: center; display: flex; flex-direction: column ; justify-content: center;">
+        <h2 class="titulo-principal">Información Personal</h2>
+        <p>Hola, mi nombre es <b>Dilan</b>. Tengo 23 años recien cumplidos y vivo en la cuidad de <em>medellin</em> con
+            mis
+            padres y
+            hermanos.</p>
+    </div>
     <hr>
     <hr>
+    <div class="contenedor-hobbies "
+        style="align-items: center; display: flex; flex-direction: column ; justify-content: center;">
+        <h2 style="background-color: lightblue; color: darkgray; font-family: cursive;">Hobbies y Pasatiempos</h2>
+        <p>Amo estar con mi familia, me gusta mucho jugar futbol, especialmente los fines de semana con mis amigos.
+            También
+            me gusta mucho salir en mi
+            moto a dar vueltas ya sea solo o acompañado. <strong>el futbol siempre ha sido un deporte muy importante en
+                mi
+                vida.</strong>
+            incluso cuando era pequeño jugamos un campeonato y quede en 1<sup>er</sup> lugar, aunque no se me dio lo de
+            cumplir el sueño de ser futbolista profesional,
+            es un deporte que amo con todo de mi. <br>
+        </p>
+        <a href="https://www.youtube.com/watch?v=8DfnrsgZmGY" target="_blank">Video de mi futbolista favorito</a>
+        <hr>
+        <p> <strong>tambien la velocidad es algo que me apasiona,</strong> siempre he sido muy bueno montado en las 2
+            ruedas, cuando era pequeño pense: <i>"Las motos son fantasticas"</i> <br>
+            <em>otro de mis pasatiempos favoritos es escuchar musica.</em>
+        </p>
+        <p>Mi sueño siempre ha sido tener una mt 09 <a href="#mt09"><sub>1</sub></a></p>
 
-    <h2>Hobbies y Pasatiempos</h2>
-    <p>Amo estar con mi familia, me gusta mucho jugar futbol, especialmente los fines de semana con mis amigos. También
-        me gusta mucho salir en mi
-        moto a dar vueltas ya sea solo o acompañado. <strong>el futbol siempre ha sido un deporte muy importante en mi
-            vida.</strong>
-        incluso cuando era pequeño jugamos un  campeonato y quede en 1<sup>er</sup> lugar, aunque no se me dio lo de cumplir el sueño de ser futbolista profesional,
-        es un deporte que amo con todo de mi. <br>
-    </p>
-    <a href="https://www.youtube.com/watch?v=8DfnrsgZmGY" target="_blank">Video de mi futbolista favorito</a>
-    <hr>
-    <p> <strong>tambien la velocidad es algo que me apasiona,</strong> siempre he sido muy bueno montado en las 2
-        ruedas, cuando era pequeño pense: <i>"Las motos son fantasticas"</i> <br>
-        <em>otro de mis pasatiempos favoritos es escuchar musica.</em>
-    </p>
-    <p>Mi sueño siempre ha sido tener una mt 09 <a href="#mt09"><sub>1</sub></a></p>
 
-    <pre>
+        <div style="text-align: center; border-radius: 50px; width: 80%; border: solid 5px darkgray;">
+            <pre style="color: blue; font-weight: 600;">
                      .-#*=.         .:+-.          
                      ..+*++:.      .:%%=.          
                          ..:-::....=.....          
@@ -60,23 +80,32 @@
 .....-+#%@%+:......... ........    .+####==+#%%%*:.
  .. .................................:*%##%%%%%-...
 </pre>
+        </div>
+    </div>
     <hr>
 
-    <h2>Metas</h2>
-    <h3>Metas a corto plazo</h3>
-    <p>Actualmente me dedico a estudiar desarrollo de software, con el objetivo de volver muy teso</p>
-    <h3>Metas a mediano plazo</h3>
-    <p>Me gustaría poder ser parte de la empresa en la cual voy a realizar mis prácticas profesionales que es Globant,
-        <mark>me visualizo tambien con mucha salud, estabilidad mental , emocional, financiera y ser muy bueno en
-            inglés.</mark>
-    </p>
-    <h3>Metas a largo plazo</h3>
-    <p>Mi meta a largo plazo es poder tener mi emprendimiento propio, comprarle una casa a mis padres y viajar por
-        el mundo con mi familia.</p>
+    <div style="align-items: flex-start; display: flex; flex-direction: column ; justify-content: flex-start;">
+        <h2 style="background-color: lightblue; color: darkgray; font-family: cursive;">Metas</h2>
+        <h3 style="background-color: lightblue; color: darkgray; font-family: cursive;">Metas a corto plazo</h3>
+        <p>Actualmente me dedico a estudiar desarrollo de software, con el objetivo de volver muy teso</p>
+        <h3 style="background-color: lightblue; color: darkgray; font-family: cursive;">Metas a mediano plazo</h3>
+        <p>Me gustaría poder ser parte de la empresa en la cual voy a realizar mis prácticas profesionales que es
+            Globant,
+            <mark>me visualizo tambien con mucha salud, estabilidad mental , emocional, financiera y ser muy bueno en
+                inglés.</mark>
+        </p>
+        <h3 style="background-color: lightblue; color: darkgray; font-family: cursive;">Metas a largo plazo</h3>
+        <p>Mi meta a largo plazo es poder tener mi emprendimiento propio, comprarle una casa a mis padres y viajar por
+            el mundo con mi familia.</p>
+    </div>
 
-    <h2>Definiciones</h2>
-    <p id="mt09">La MT-09 es una motocicleta naked de Yamaha, conocida por su potente motor de tres cilindros y su
-        diseño ágil y ligero.</p>
+ <h2 style="background-color: lightblue; color: darkgray; font-family: cursive;">MT-09</h2>
+        <p id="mt09"> <span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">La MT-09 es
+                una motocicleta naked</span> de Yamaha, conocida por su potente motor de tres cilindros y su
+            diseño ágil y ligero. <span id="precio-mt" data-precio="caro">su precio es de 60 millones de pesos
+                colombianos</span></p>
+
+
 </body>
 
 </html>
