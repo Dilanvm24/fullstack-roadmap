@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina con Figma - Dilan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+   <nav>
+    <div class="nav-izquierda">
+        <a href="#writing-dev" id="writing-link">writing.dev</a>
+    </div>
+
+    <div class="nav-derecha">
+        <a href="#categorias" class="navegacion-link">categories</a>
+        <a href="#articulos" class="navegacion-link">articles</a>
+        <a href="#acerca" class="navegacion-link">about</a>
+    </div>
+</nav>
+
+
+    <header class="Encabezado-principal">
+        <img src="ImagenesCheckPoint/Logo.png" alt="logo de pagina con Figma" class="logo">
+        <h1 class="Titulo-principal">Writings for Developers</h1>
+        <p class="parrafo-uno">Curated collection of articles for busy developers</p>
+    </header>
+
+        <hr>
+        <nav class="section-link">
+            <a href="#iconos"> <img src="ImagenesCheckPoint/Grid Icon.png" alt="icono cuadros pequeños" class="icono"></a>
+           <a href="#iconos"><img src="ImagenesCheckPoint/List Icon.png" alt="icono tipo hamburguesa" class="icono"></a>
+              <ul class="menu">
+                <li><h2>JavaScript</h2></li>
+                <li><h2>DevOps</h2></li>
+                <li><h2>Cloud</h2></li>
+                <li><h2>Terraform</h2></li>
+                <li><h2>Architecture</h2></li>
+                <li><h2>Scalability</h2></li>
+                <li><h2>Blockchain</h2></li>
+                <li><h2>Algorithms</h2></li>
+                <li><h2>Testing</h2></li>
+              </ul>
+        </nav>
+
+
+        <main id="contenedor-de-tarjeta">
+            <article class="tarjeta">
+                <img class="imagen-articulo" src="ImagenesCheckPoint/image 1.png" alt="imagen de carta uno">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub Actions provide a really powerful way to integrate continuous integration and delivery
+                        into
+                        your applications.</p>
+                        <footer>June 24, 2022  <b>•</b>  DevOps</footer> 
+            </article>
+
+            <article class="tarjeta">
+                <img class="imagen-articulo" src="ImagenesCheckPoint/image 2.png" alt="imagen de tarjeta dos">
+                <h3>Python for the Absolute beginners</h3>
+                <p>Python is the most popular programming language out there and is used for so many different
+                        industries.</p>
+                        <footer>June 24, 2022  <b>•</b>  DevOps</footer>
+            </article>
+
+            <article class="tarjeta">
+                    <img class="imagen-articulo" src="ImagenesCheckPoint/image 3.png" alt="imagen de tarjeta tres">
+                    <h3>Docker from Zero to Hero</h3>
+                    <p>Learn what is Docker and how Docker is used in the whole software development process.</p>
+                    <footer>June 24, 2022  <b>•</b>  DevOps</footer>
+            </article>
+
+            <article class="tarjeta">
+                <img class="imagen-articulo" src="ImagenesCheckPoint/image 4.png" alt="imagen tarjeta cuatro">
+                <h3>Master Advanced CI/CD with GitHub Actions</h3>
+                <p>Take your CI/CD knowledge further by mastering advanced techniques with GitHub Actions.</p>
+                <footer>October 15, 2022  <b>•</b>  DevOps</footer>
+            </article>
+
+            <article class="tarjeta">
+                    <img class="imagen-articulo" src="ImagenesCheckPoint/image 5.png" alt="imagen tarjeta cinco">
+                    <h3>Data Science for Beginners</h3>
+                    <p>Get introduced to the world of data science, exploring basic concepts, tools, and techniques.</p>
+                    <footer>July 1, 2022  <b>•</b>  Data Science</footer>
+            </article>
+
+            <article class="tarjeta">
+                <img class="imagen-articulo" src="ImagenesCheckPoint/image 6.png" alt="imagen tarjeta seis">
+                <h3>Introduction to Machine Learning</h3>
+                <p>Understand the basics of machine learning and how it is applied to various fields.</p>
+                <footer>July 10, 2022  <b>•</b>  Machine Learning</footer>
+            </article>
+
+            <article class="tarjeta">
+                <img class="imagen-articulo" src="ImagenesCheckPoint/image 7.png" alt="Imagen tarjeta siete">
+                <h3>JavaScript Fundamentals</h3>
+                <p>Learn the essentials of JavaScript, the language that powers the web, from variables to loops.</p>
+                <footer>July 5, 2022  <b>•</b>  Programming</footer>
+                </article>
+
+            <article class="tarjeta">
+                    <img class="imagen-articulo" src="ImagenesCheckPoint/image 8.png" alt="imagen tarjeta ocho">
+                    <h3>Web Development Basics</h3>
+                    <p>Explore HTML, CSS, and JavaScript to create engaging web pages and web applications.</p>
+                    <footer>July 15, 2022  <b>•</b>  Web Development</footer>
+            </article>
+
+            <article class="tarjeta">
+                <img class="imagen-articulo" src="ImagenesCheckPoint/image 9.png" alt="imagen tarjeta nueve">
+                <h3>Introduction to Cloud Computing</h3>
+                <p>Learn about cloud services and how to leverage them for scalable and efficient solutions.</p>
+                <footer>July 20, 2022  <b>•</b>  Cloud Computing</footer>
+
+            </article>
+        </main>
+
+
+          <div id="contenedor-formulario">
+            <div id="contenedor-div-formulario">
+            <form action="" id="formulario-imagen">
+                <h2>Añadir Imagen</h2>
+                <div>
+                <label for="titulo-imagen">Titulo de imagen</label>
+                <input type="text" id="titulo-imagen" required>
+                </div>
+                <div>
+                <label for="descripcion-imagen">descripcion</label>
+                <input type="text" id="descripcion-imagen" required minlength="10">
+                </div>
+                <div>
+                <label for="fecha-imagen">Fecha de imagen</label>
+                <input type="date" id="fecha-imagen" required>
+                </div>
+                <div>
+                <label for="area-imagen">Area</label>
+                <input type="text" id="area-imagen" required>
+                </div>
+                <div>
+                <label for="URL-imagen">URL imagen</label>
+                <input type="url" id="URL-imagen" required>
+                </div>
+                <button  type="button" id="boton-formulario">Agregar</button>
+            </form>
+            </div>
+            </div>
+
+
+        <hr>
+
+        
+        <footer class="footer-final">
+            <div>
+             <span id="span-footer">writing.dev </span>
+            <button id="boton-uno">by@kamrify</button>
+            </div>
+            <button id="boton-dos"> <img id="logo-twitter" src="ImagenesCheckPoint/logoTwitter.png" alt="logo de twitter"> Follow @writingsdev</button>
+        </footer>
+
+            <script src="script.js"></script>
+</body>
+</html>
