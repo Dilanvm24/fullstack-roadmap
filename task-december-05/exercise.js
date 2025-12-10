@@ -30,5 +30,5 @@ function multiplicarArrays(array){
 
 
 }
-(multiplicarArrays([5, 2, 1, 4, 3, [2, 3] ,2]));
+(multiplicarArrays([5, 2, 1, 4, 3, [2] ,[2]]));
 
