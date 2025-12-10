@@ -594,7 +594,7 @@ const bookCollection = [
 function getBooksByAvailability(boolean){
     let arrayVacio = [];
     for(let i = 0; i < bookCollection.length; i++ ){
-        if(bookCollection[i].isAvailable === true){
+        if(bookCollection[i].isAvailable === boolean){
             arrayVacio.push(bookCollection[i]);
         }
     }
