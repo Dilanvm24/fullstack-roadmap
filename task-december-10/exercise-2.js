@@ -597,7 +597,7 @@ const bookCollection = [
 function getBooksByGenre(genero){
     let arraNewBook = [];
     for(let i = 0; i < bookCollection.length; i++){
-        if(bookCollection[i].genre = genero){
+        if(bookCollection[i].genre.includes(genero)){
             arraNewBook.push(bookCollection[i])
         }
         

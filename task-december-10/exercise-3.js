@@ -598,10 +598,12 @@ const bookCollection = [
 function getBooksByAmazonRating(number){
     let arrayVacio = [];
     let score = 0;
-     for(let i = 0; i > bookCollection.length; i++ ){
-             if(bookCollection[i].ratings >= number){
-             arrayVacio.push(bookCollection[i])
-             
+     for(let i = 0; i > bookCollection.ratings; i++ ){
+        for(let j = i+1; j < bookCollection.ratings; j++){
+             if(bookCollection[i].ratings.source >= number){
+             arrayVacio.push(bookCollection[i].ratings.source)
+        }
+
          }
         }
         
