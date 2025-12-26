@@ -13,16 +13,14 @@
  */
 
 function revisarEstructura (string){
-        let contadorParentesis;
+    let contador = 0;
     for(let i = 0; i < string.length; i++){
-       contadorParentesis++;
-       if(contadorParentesis === 0){
-            return true;
-       }else{
-        return false;
-       }
+        if(string[i] === "(") contador++;
+        if(string[i] === ")") contador--;
+        if(contador < 0) return false;
+
     }
-    
+    return !contador;
 }
 
 console.log(revisarEstructura("()"))

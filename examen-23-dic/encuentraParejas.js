@@ -78,26 +78,12 @@ const personas = [
  */
 
 function encontrarParejaEnLaCiudad(personaObjetivo) {
-    let pareja = [];
-
-     for(let i = 0; i < personas.length; i++){
-         if(personas[i].genero !== personaObjetivo.genero){
-          let ultimaMujer =  personas[48];
-
-           return ultimaMujer;
-           
-         }
-     }
-
-      return pareja;
-
-
-    //    for (let persona in personas) {
-    //        if (personas[persona] === personaObjetivo && personas[persona].genero !== personaObjetivo.genero) 
-    //           pareja.push(personas[persona]);
-    //        return pareja;
-    //    }
-
+    let pareja;
+        for (let persona of personas) {
+            if (persona.ciudad === personaObjetivo.ciudad && persona.genero !== personaObjetivo.genero) pareja = persona;
+            //para retonar la primera persona solo debo retornar persona pa que no si recorra todo completo
+        }
+        return pareja;
      
 }
 
@@ -120,20 +106,10 @@ console.log(encontrarParejaEnLaCiudad({ nombre: "Camilo", edad: 28, intereses: [
 function encontrarParejasPotencialesPorEdad(personaObjetivo) {
     let parejasPotenciales = [];
 
-
-    for(let i = 0; i < personas.length; i++){
-        if(personas[i].ciudad === personaObjetivo.ciudad && personas[i].genero !== personaObjetivo.genero){
-            if(personas[i].edad > personaObjetivo.edad){
-                parejasPotenciales.push(personas[i])
-            }
-            
-        }
-    }
-
-    // for (let persona of personas) {
-    //     if (persona.genero !== personaObjetivo.genero
-    //         && persona.edad - personaObjetivo.edad <= 5 ) parejasPotenciales = persona;
-    // }
+     for (let persona of personas) {
+         if (persona.genero !== personaObjetivo.genero
+             && persona.edad - personaObjetivo.edad <= 5 ) parejasPotenciales = persona;
+     }
 
     return parejasPotenciales;
 }
