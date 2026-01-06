@@ -29,18 +29,17 @@ function investigarCombinacionesPeligrosas(clinicalRecordDB){
         let registro = clinicalRecordDB[i];
         let medicamentos = registro.medicationsUsed;
         
-        // ✅ Validar que medicamentos existe y es un array
-        if(!medicamentos || !Array.isArray(medicamentos)){
-            continue; // Saltar este registro
-        }
         
+        if(!medicamentos || !Array.isArray(medicamentos)){
+            continue;
+        }
         let tieneWarfarina = false;
         let aiinesEncontrados = [];
         
         for(let j = 0; j < medicamentos.length; j++){
-            // ✅ Validar que el medicamento no sea null o undefined
+          
             if(!medicamentos[j]){
-                continue; // Saltar este medicamento
+                continue; 
             }
             
             if(medicamentos[j].toLowerCase() === anticoagulante.toLowerCase()){
@@ -50,7 +49,6 @@ function investigarCombinacionesPeligrosas(clinicalRecordDB){
         
         if(tieneWarfarina){
             for(let k = 0; k < medicamentos.length; k++){
-                // ✅ Validar que el medicamento no sea null o undefined
                 if(!medicamentos[k]){
                     continue;
                 }
